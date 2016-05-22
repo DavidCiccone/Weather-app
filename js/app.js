@@ -5,6 +5,7 @@
 		var lon = google.loader.ClientLocation.longitude;
 		var city = google.loader.ClientLocation.address.city;
 
+//applies the users city
 		document.getElementsByClassName("city")[0].innerHTML = city;
 	
 //Retrieves weather data
@@ -25,6 +26,28 @@
 
 		});	
 		               
-		       
-console.log(city);
+
+
+
+
+
+
+
+  function success(position) {
+    var latitude  = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    console.log(latitude, longitude);
+	}
+
+
+  navigator.geolocation.getCurrentPosition(success);
+
+
+
+
+
+
+
+		    
+//console.log(city);
 
