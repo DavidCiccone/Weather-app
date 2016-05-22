@@ -3,6 +3,9 @@
 //Finds users location be lat and lon
 		var lat = google.loader.ClientLocation.latitude;
 		var lon = google.loader.ClientLocation.longitude;
+		var city = google.loader.ClientLocation.address.city;
+
+		document.getElementsByClassName("city")[0].innerHTML = city;
 	
 //Retrieves weather data
 		$.ajax({ url: "https://api.forecast.io/forecast/c199afcc2ac8c994a18563502f3e65bc/" + lat + "," + lon,
@@ -17,10 +20,11 @@
   				 },
 				 error: function(){
 					console.log('Not Working');
+					alert('Weather data not available.');
 				 }
 
 		});	
 		               
 		       
-
+console.log(city);
 

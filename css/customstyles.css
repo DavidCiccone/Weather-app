@@ -7,7 +7,13 @@ body {
 }
 
 .center {
-	margin: 15% 0 0 0;
+	margin: 200px 0 0 0;
+}
+
+@media (max-width: 600px) {
+	.center {
+		margin: 15px 20px;
+	}
 }
 
 #bg {
@@ -16,6 +22,8 @@ body {
   left: 0; 
   min-width: 100%;
   min-height: 100%;
+  background-size: cover;
+  
 }
 
 .img-width {
@@ -24,5 +32,23 @@ body {
 }
 
 .temp {
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	
+
+font-size:3em;
+font-weight:bold;
+text-shadow: 0px 15px 15px #000;
+
+}
+
+.head {
+	font-size: 48px;
+}
+
+.color-box {
+	background: rgba(126, 126, 126, 0.75);
+	border-radius: 10px;
+}
+
+.summary-long {
+	font-size: 24px;
 }
