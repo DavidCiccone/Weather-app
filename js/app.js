@@ -15,9 +15,13 @@
   					console.log(results);
   					console.log(results.currently.temperature);
   					document.getElementsByClassName("temp")[0].innerHTML = results.currently.temperature + "° F";
-  					document.getElementsByClassName("icon")[0].innerHTML = "<img class='img-width' src='images/" + results.currently.icon + ".png'>";
   				 	document.getElementsByClassName("summary")[0].innerHTML = results.currently.summary;
   				 	document.getElementsByClassName("summary-long")[0].innerHTML = results.daily.summary;
+
+					//animated icon
+                    var skycons = new Skycons({"color": "white"});//color of icon
+                    skycons.set("icon1", results.currently.icon);//applies correct icon to page
+  				 	skycons.play();//start icon animation
   				 },
 				 error: function(){
 					console.log('Not Working');
@@ -49,5 +53,4 @@
 
 
 		    
-//console.log(city);
 
