@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Simple Weather App</title>
+   <head>
+      <!-- Required meta tags always come first -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Simple Weather App</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/customstyles.css">
+      <link rel="stylesheet" href="css/normalize.css">
+   </head>
+   <body class="center" id="bg">
+      <div class="container color-box">
+         <div class="row">
+            <h1 class="text-center head">Weather App</h1>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/customstyles.css">
-    <link rel="stylesheet" href="css/normalize.css">
-  </head>
-  <body class="center" background="images/background.jpg" id="bg"> 
-    
-     <div class="container color-box">
-      <div class="row">
-        <h1 class="text-center head">What's the weather like in<p class="city"></p></h1>
-      </div>
-    
-  
-      <div class="row">
-        
+         <div class="col-md-12">
+            <div class="location text-center"></div>
+         </div>
+         </div>
+         <div class="row">
             <div class="col-md-6 text-center p-x-5">
-              <h1 class="temp"></h1>
+               <p class="temp thing"></p>
+               <p class="temp2 thing"></p>
+               <button class="btn" id="button">Change to Celcus</button>
             </div>
             <div class="col-md-6 text-center">
-              <div class="icon"></div>
-              <div>
-              <canvas id="icon1" width="128" height="128"></canvas>
-              </div>
-              <div class="summary"></div>
+               <div class="icon"></div>
+               <div>
+                  <canvas id="icon1" width="128" height="128"></canvas>
+               </div>
+               <div class="summary"></div>
             </div>
-      </div> 
-   
-  
-      <div class="col-md-12 text-center">
-        <div class="summary-long m-t-3"></div>
-       </div>
-  </div>
-    <!-- jQuery first, then Bootstrap JS. -->
-    <script src="js/tether.min.js"></script><!-- Tether for Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script src="images/skycons-master/skycons.js"></script>
-    <script src="js/app.js"></script>
-  
-  </body>
+         </div>
+         <div class="col-md-12 text-center">
+            <div class="summary-long m-t-3"></div>
+         </div>
+      </div>
+      <!-- jQuery first, then Bootstrap JS. -->
+      <script src="js/tether.min.js"></script><!-- Tether for Bootstrap -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+      <script src="images/skycons-master/skycons.js"></script>
+      <script src="js/app.js"></script>
+   </body>
 </html>
